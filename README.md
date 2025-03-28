@@ -11,7 +11,7 @@ Este repositório contém códigos desenvolvidos durante o segundo semestre do c
 
 ```
 📦 estudos-em-c-estruturas-de-dados
-├── 📁 em desenvolvimento
+├── 📁 Treino
 │
 ├── README.md
 └── 📁 utils (funções auxiliares)
