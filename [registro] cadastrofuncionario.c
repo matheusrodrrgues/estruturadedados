@@ -1,5 +1,5 @@
 // Exercicio desenvolvido para estudos
-// Matheus Silva Rodrigues
+// Matheus Silva Rodrigues.
 
 #include<stdio.h>
 #include<stdlib.h>
