@@ -10,17 +10,21 @@ typedef struct pilha {
     No *topo;
 } Pilha;
 
-void empilhar(Pilha *p, int valor) {
-    No *novo = malloc(sizeof(No));
+
+//operação push
+void empilhar(Pilha *p, int valor) { // Adiciona um elemento ao topo da pilha
+    No *novo = malloc(sizeof(No)); 
     if (novo == NULL) {
         printf("Erro ao alocar memoria\n");
         return;
     }
-    novo->valor = valor;
-    novo->proximo = p->topo;
-    p->topo = novo;
+    novo->valor = valor; // Cria um novo nó
+    novo->proximo = p->topo; // Aponta o novo nó para o topo atual da pilha
+    p->topo = novo; // Atualiza o topo da pilha para o novo nó
+    printf("Valor %d empilhado com sucesso!\n", valor);
 }
 
+// operação pop
 void desempilhar(Pilha *p) {
     if (p->topo == NULL) {
         printf("A pilha está vazia.\n");
